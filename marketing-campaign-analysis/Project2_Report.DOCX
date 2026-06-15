@@ -1,0 +1,330 @@
+# 📊 Marketing Campaign Analysis
+
+## Project Report
+
+---
+
+# 1. Project Title
+
+**Marketing Campaign Analysis**
+
+---
+
+# 2. Domain
+
+**Marketing Analytics / Customer Analytics**
+
+---
+
+# 3. Problem Understanding
+
+A retail company has conducted multiple marketing campaigns and collected customer-level information including demographics, income, spending behavior, purchasing channels, and campaign responses.
+
+The objective of this project is to analyze customer behavior, identify valuable customer segments, understand factors influencing campaign acceptance, and provide actionable insights for improving future marketing campaigns.
+
+The project focuses on understanding:
+
+* Which customer segments respond better to campaigns
+* How customer demographics influence spending behavior
+* Which channels are preferred by valuable customers
+* Characteristics of ideal target customers
+
+---
+
+# 4. Project Objectives
+
+The main objectives of this project are:
+
+* Clean and preprocess customer marketing data.
+* Perform exploratory data analysis to identify patterns.
+* Create meaningful customer segments using business rules.
+* Store cleaned data in SQL database.
+* Perform analytical queries for KPI generation.
+* Build an interactive Streamlit dashboard for business users.
+
+---
+
+# 5. Approach
+
+The project was implemented using an end-to-end analytics workflow.
+
+## Step 1: Data Loading
+
+The marketing dataset was loaded using Python Pandas.
+
+The dataset contains:
+
+* Customer demographics
+* Income details
+* Product-wise spending
+* Purchase channel information
+* Campaign response details
+
+---
+
+# 6. Data Cleaning and Preprocessing
+
+The following preprocessing steps were performed:
+
+* Checked dataset structure and data types.
+* Handled missing values.
+* Converted date columns into proper format.
+* Removed invalid records and handled outliers.
+* Prepared cleaned dataset for analysis.
+
+---
+
+# 7. Feature Engineering
+
+New features were created to support customer analysis.
+
+## Age
+
+Customer age was calculated using birth year.
+
+## Total Spend
+
+Total spending was calculated by combining:
+
+* Wine spending
+* Fruit spending
+* Meat spending
+* Fish spending
+* Sweet spending
+* Gold product spending
+
+## Total Purchases
+
+Purchase activity was combined from:
+
+* Web purchases
+* Store purchases
+* Catalog purchases
+* Deal purchases
+
+## Customer Segmentation
+
+Business-based segmentation was created:
+
+### High Income Customers
+
+Customers with income above defined threshold.
+
+### Young Customers
+
+Customers below a specific age group.
+
+### Campaign Responders
+
+Customers who accepted campaigns.
+
+### High Web Engagement Customers
+
+Customers with frequent website visits.
+
+### Family Customers
+
+Customers having children.
+
+### High Spenders
+
+Customers with high total spending values.
+
+---
+
+# 8. Exploratory Data Analysis (EDA)
+
+EDA was performed to understand customer behavior.
+
+## Univariate Analysis
+
+Analyzed individual variables:
+
+* Income distribution
+* Age distribution
+* Customer spending distribution
+* Purchase behavior
+
+Findings:
+
+* Majority of customers belong to middle-income groups.
+* Spending varies significantly among customers.
+
+---
+
+## Bivariate Analysis
+
+Relationships between variables were analyzed.
+
+### Income vs Total Spending
+
+Analysis showed that higher-income customers generally contribute higher spending.
+
+### Campaign Response vs Spending
+
+Customers responding to campaigns showed stronger purchasing behavior.
+
+### Customer Segments vs Spending
+
+Different customer groups showed different purchasing patterns.
+
+---
+
+# 9. SQL Database Design and Analysis
+
+The cleaned dataset was loaded into SQLite database.
+
+Database:
+
+```
+marketing.db
+```
+
+Table:
+
+```
+customers
+```
+
+SQL was used for:
+
+* Data storage
+* KPI calculations
+* Customer segmentation analysis
+* Business reporting
+
+---
+
+# 10. SQL Analytical Queries
+
+The following analysis was performed using SQL:
+
+* Total customer count
+* Average income calculation
+* Total customer spending
+* Campaign response rate
+* High-income customer identification
+* Segment-wise spending analysis
+* Campaign responder spending analysis
+* Top high-value customers
+* Country-wise customer analysis
+* Channel usage analysis
+
+---
+
+# 11. Dashboard Development
+
+An interactive Streamlit dashboard was created.
+
+Dashboard features:
+
+## Filters
+
+Users can filter data using:
+
+* Country
+* Education
+* Marital Status
+* Age Band
+* Income Band
+
+---
+
+## KPI Metrics
+
+Dashboard displays:
+
+* Total Customers
+* Average Income
+* Total Spend
+* Campaign Response Rate
+
+---
+
+## Visualizations
+
+The dashboard includes:
+
+* Income Distribution Chart
+* Income vs Spending Analysis
+* Customer Segment Spending Analysis
+* Campaign Response Analysis
+
+---
+
+# 12. Key Findings
+
+The major insights identified from analysis are:
+
+1. High-income customers contribute significantly higher revenue compared to other groups.
+
+2. Customers who responded to campaigns show higher engagement and spending behavior.
+
+3. Income has a positive relationship with total customer spending.
+
+4. Customer segments have different purchasing patterns across products and channels.
+
+5. Mid-income customers represent a large customer base and can be targeted for volume-based campaigns.
+
+---
+
+# 13. Business Recommendations
+
+Based on analysis, the following recommendations are suggested:
+
+## 1. Target High-Value Customers
+
+Focus premium campaigns on high-income and high-spending customers.
+
+---
+
+## 2. Improve Personalization
+
+Use customer segmentation to create personalized offers based on:
+
+* Age
+* Income
+* Spending behavior
+* Purchase history
+
+---
+
+## 3. Increase Campaign Effectiveness
+
+Analyze previous campaign responders and target similar customer profiles.
+
+---
+
+## 4. Improve Low Response Segments
+
+Identify customers with low engagement and provide targeted promotions.
+
+---
+
+## 5. Optimize Marketing Channels
+
+Prioritize channels preferred by high-value customers to improve conversion.
+
+---
+
+# 14. Conclusion
+
+This project successfully developed an end-to-end marketing analytics solution using Python, SQL, and Streamlit.
+
+The solution helps businesses understand customer behavior, identify valuable segments, measure campaign effectiveness, and make data-driven marketing decisions.
+
+---
+
+# 15. Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SQLite
+* SQL
+* Streamlit
+
+```
+```
